@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FunctionComponentElement } from 'react';
 import './App.css';
 
-function App() {
+const App: React.SFC = () => {
   return (
     <div className="App">
       <h1>Weather APP</h1>
