@@ -6,6 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = express_1.default();
 const PORT = process.env.PORT || 3030;
+app.get('/', (req, res) => {
+    res.status(201).json({ message: "Hi!" });
+});
 app.listen(PORT, () => {
     console.log('Listen on port: ' + PORT);
 });
