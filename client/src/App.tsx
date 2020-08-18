@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
+import Card from './components/card';
+import Button from './components/button';
 
-interface userI {
+export interface userI {
   name: {
     first: string,
     last: string,
@@ -30,18 +32,14 @@ const App: React.SFC = () => {
 
     ApiReq();
   }, []);
-  
 
   return (
     <div className="App">
       <h1>User Random Api</h1>
       { state && state.map((user) => (
-        <div key={user.id.value}>
-          <p>{user.gender}</p>
-          <p>{user.name.first} {user.name.last}</p>
-          <img src={user.picture.large} alt={user.name.title}/>
-        </div>
+       <Card key={user.id.value} user={user} />
       ))}
+      <Button text="Change" size="lg" />
     </div>
   );
 }
