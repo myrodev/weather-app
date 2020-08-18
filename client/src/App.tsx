@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Card from './components/card';
+import Button from './components/button';
 
 export interface userI {
   name: {
@@ -38,6 +39,7 @@ const App: React.SFC = () => {
       { state && state.map((user) => (
        <Card key={user.id.value} user={user} />
       ))}
+      <Button text="Change" size="lg" />
     </div>
   );
 }
