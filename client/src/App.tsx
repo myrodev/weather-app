@@ -39,7 +39,7 @@ const App: React.SFC = () => {
       { state && state.map((user) => (
        <Card key={user.id.value} user={user} />
       ))}
-      <Button text="Change" size="lg" />
+      <Button text="Change" />
     </div>
   );
 }
