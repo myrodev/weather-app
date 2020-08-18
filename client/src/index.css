@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #333;
+  background: #fefefe;
   font-size: 16px;
 }
 a {
@@ -12,5 +12,5 @@ a {
 }
 ul,
 li {
-  list-styled: none;
+  list-style: none;
 }

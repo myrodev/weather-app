@@ -11,12 +11,14 @@ const Button: React.SFC<Props> = ({ text, size }) => (
 );
 
 const styles: any = {
-  padding: '16px 32px',
+  margin: ".5rem 0",
+  padding: '16px 36px',
   border: 'none',
   borderRadius: '7px',
   background: 'tomato',
   textTransform: 'uppercase',
   color: 'white',
+  fontSize: "1em"
 };
 
 const buttonLarge: {} = {
