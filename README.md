@@ -1,2 +1,2 @@
 # weather-app
-This is a small project of weather
+This is a small project
